@@ -25,8 +25,24 @@
       margin:0 auto;
       padding:2rem 1rem 4rem;
     }
-    h1{margin:0;font-size:2.7rem;}
-    h2{margin:.25rem 0;font-size:1.25rem;font-weight:500;color:var(--muted);}
+    /* --- avatar photo --- */
+    .avatar{
+      width:160px;
+      height:160px;
+      border-radius:50%;
+      object-fit:cover;
+      display:block;
+      margin:0 auto 1.5rem;
+      box-shadow:0 2px 6px rgba(0,0,0,.15);
+    }
+    h1{margin:0;font-size:2.7rem;text-align:center;}
+    h2{
+      margin:.25rem 0;
+      font-size:1.25rem;
+      font-weight:500;
+      color:var(--muted);
+      text-align:center;
+    }
     section{margin-top:2rem;}
     section h3{
       margin:0 0 .5rem;
@@ -43,6 +59,9 @@
 <body>
   <main class="wrapper">
     <header>
+      <!-- profile photo -->
+      <img src="1706632962898.jpg" alt="Tom Loosley" class="avatar">
+
       <h1>Tom Loosley</h1>
       <h2>Account Manager, Business Development Team @ Clarksons Research</h2>
       <h2>MSci Natural Sciences @ University of Exeter</h2>
@@ -58,50 +77,43 @@
       </p>
     </section>
 
-    <!-------------- Projects SECTION -------------->
+    <!-- ------------ Projects SECTION ------------ -->
     <section id="projects">
       <h3>Projects</h3>
 
-      <p>I’m attempting to create one personal project every month in 2025 to improve my Python and project management skills.</p>
+      <p>I’m attempting to create one personal project every month in 2025 to improve my Python and project-management skills.</p>
 
       <ul>
-        <!-- newest project first -->
         <li>
           <a href="https://tloosley.github.io" target="_blank" rel="noopener">
             Personal Website &ndash; Portfolio&nbsp;and&nbsp;Blog
           </a> <small>(Jul&nbsp;2025)</small>
         </li>
-
         <li>
           <a href="https://profitmodel.streamlit.app" target="_blank" rel="noopener">
             Profit Resilience Model &ndash; Scenario Stress-Testing Against Market Shocks
           </a> <small>(Jun&nbsp;2025)</small>
         </li>
-
         <li>
           <a href="https://github.com/tloosley/BDI-Prediction-Model" target="_blank" rel="noopener">
             BDI Prediction Model &ndash; Forecasting Shipping Indices Using ML
           </a> <small>(May&nbsp;2025)</small>
         </li>
-
         <li>
           <a href="https://multifuelcalculator.streamlit.app" target="_blank" rel="noopener">
             Multi-Fuel Carbon&nbsp;&amp;&nbsp;Cost Scenario Explorer&nbsp;(MCCSE)
           </a> <small>(Apr&nbsp;2025)</small>
         </li>
-
         <li>
           <a href="https://solarfarmestimator.streamlit.app" target="_blank" rel="noopener">
             Solar Farm Power Estimator
           </a> <small>(Mar&nbsp;2025)</small>
         </li>
-
         <li>
           <a href="https://habitstreaktracker.streamlit.app" target="_blank" rel="noopener">
             Habit Streak Tracker
           </a> <small>(Feb&nbsp;2025)</small>
         </li>
-
         <li>
           <a href="https://rowingworkoutpredictor.streamlit.app" target="_blank" rel="noopener">
             Rowing Workout Predictor
@@ -122,9 +134,9 @@
     <section id="education">
       <h3>Education</h3>
       <ul>
-        <li><strong>MSci Natural Sciences, University of Exeter </strong>(Sep&nbsp;2020 – Jun&nbsp;2024) &mdash; 2:1</li>
-        <li><strong>A-Levels, Chew Valley School, Bristol </strong>(2018 – 2020): Physics A, Mathematics A, Chemistry B</li>
-        <li><strong>EPQ </strong>(A*) &mdash; “To what extent can Hydrogen fuel be considered an alternative for propulsion in shipping”</li>
+        <li><strong>MSci Natural Sciences, University of Exeter</strong> (Sep&nbsp;2020 – Jun&nbsp;2024) &mdash; 2:1</li>
+        <li><strong>A-Levels, Chew Valley School, Bristol</strong> (2018 – 2020): Physics A, Mathematics A, Chemistry B</li>
+        <li><strong>EPQ</strong> (A*) &mdash; “To what extent can Hydrogen fuel be considered an alternative for propulsion in shipping”</li>
         <li><strong>Master’s Research Project</strong> &mdash; “Assessing Near Infrared Spectroscopy as a tool for performance” (Jan&nbsp;2023 – Jun&nbsp;2024)</li>
       </ul>
     </section>
@@ -132,7 +144,9 @@
     <section id="publications">
       <h3>Publications</h3>
       <p>
-        <em>2022 UK heatwave impacts on agrifood: implications for a climate-resilient food system</em>,
+        <a href="https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1282284/full" target="_blank" rel="noopener">
+          <em>2022 UK heatwave impacts on agrifood: implications for a climate-resilient food system</em>
+        </a>,
         <strong>Frontiers in Environmental Sciences</strong>, 15&nbsp;Nov&nbsp;2023
       </p>
     </section>
